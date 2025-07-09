@@ -36,7 +36,11 @@ const Popularjobs = () => {
           {isLoading ? ( <ActivityIndicator size={'large'} color={COLORS.primary}/>)
                      : error ? (<Text>Something went wrong</Text>)
                              : (<FlatList data={data}
-                                          renderItem={({item}) => (<PopularJobCard item={item}/>) }
+                                          renderItem={({item}) => (<PopularJobCard item={item} 
+                                            handleNavigate={()=> {
+                                                  router.push(`/job-details/${item.job_id}`)
+                                                  setSelectedJob(item.job_id)
+                                          } }/>) }
                                           keyExtractor={item => item?.job_id}
                                           contentContainerStyle= {{columnGap:SIZES.medium}}
                                           horizontal showsHorizontalScrollIndicator={false} ></FlatList>) 
