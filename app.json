@@ -5,6 +5,27 @@
       "expo-router"
     ],
     "name": "RN_App",
-    "slug": "RN_App"
+    "slug": "RN_App",
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "f8d0f5b2-8312-4396-a622-86d4979aa201"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/f8d0f5b2-8312-4396-a622-86d4979aa201"
+    },
+    "android": {
+      "package": "com.umberto46x.RN_App"
+    },
+    "ios": {
+      "bundleIdentifier": "umberto46x.RNapp",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    }
   }
 }
